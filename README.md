@@ -1,4 +1,4 @@
-# Estmating the Causal Effect of Peace Agreements on Violence: A Double Machine Learning Approach Adapted for Panel Data
+# Double Machine Learning for Observational Panel Data: A look at the Impact of Peace Deals on Violence
 
 This project looks to find the **true** causal effect of peace agreements on the intensity of violence, using **Double Machine Learning (DML)** to control for confounders and handle high-dimensional panel data. We use lagged data to capture delayed effects and fixed effects to control for individual differences between countries.
 
