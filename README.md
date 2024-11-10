@@ -2,7 +2,7 @@
 
 This project analyzes the causal effect of peace agreements on the intensity of violence, using **Double Machine Learning (DML)** to control for confounders and handle high-dimensional panel data. We use lagged data to capture delayed effects and fixed effects to control for individual differences between countries.
 
-Check out the article for a simplified explanation of our method and approach: 
+<!-- Check out the article for a simplified explanation of our method and approach:  -->
 
 ## 📈 Purpose & Features
 - **Assess Causal Impact**: Use DML to better isolate the true effect of peace agreements on violence reduction.
