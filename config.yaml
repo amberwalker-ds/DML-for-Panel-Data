@@ -1,0 +1,108 @@
+pax_path: 'Data/pax_corpus_2003_agreements_18-04-24.csv'
+panel_path: 'Data/panel.csv'
+mapping_path: 'Data/peace_process_to_iso.pkl'
+path_out: 'Data/'
+
+outcome_variable: 'violence_intensity'
+end_period: 201912
+num_lags: 2
+n_splits: 6
+test_size: 2
+
+model_y:
+  type: "RandomForestRegressor"
+  params:
+    n_estimators: 120
+    max_depth: 9
+    min_samples_leaf: 5
+
+model_t:
+  type: "RandomForestClassifier"
+  params:
+    n_estimators: 100
+    max_depth: 7
+    min_samples_leaf: 7
+
+lag_type: "pa_"
+
+base_covariates:
+  - populationwb
+  - since_anyviolence
+  - since_armedconf
+  - since_civilwar
+  - tokens
+  - obs
+  - sentiment_words
+  - uncertainty
+  - ste_theta0
+  - ste_theta1
+  - ste_theta2
+  - ste_theta3
+  - ste_theta4
+  - ste_theta5
+  - ste_theta6
+  - ste_theta7
+  - ste_theta8
+  - ste_theta9
+  - ste_theta10
+  - ste_theta11
+  - ste_theta12
+  - ste_theta13
+  - ste_theta14
+  - ste_theta0_stock
+  - ste_theta1_stock
+  - ste_theta2_stock
+  - ste_theta3_stock
+  - ste_theta4_stock
+  - ste_theta5_stock
+  - ste_theta6_stock
+  - ste_theta7_stock
+  - ste_theta8_stock
+  - ste_theta9_stock
+  - ste_theta10_stock
+  - ste_theta11_stock
+  - ste_theta12_stock
+  - ste_theta13_stock
+  - ste_theta14_stock
+  - sentiment_stock
+
+X_list:
+  - populationwb_lag0
+  - since_anyviolence_lag0
+  - since_armedconf_lag0
+  - since_civilwar_lag0
+  - tokens_lag0
+  - obs_lag0
+  - sentiment_words_lag0
+  - uncertainty_lag0
+  - ste_theta0_lag0
+  - ste_theta1_lag0
+  - ste_theta2_lag0
+  - ste_theta3_lag0
+  - ste_theta4_lag0
+  - ste_theta5_lag0
+  - ste_theta6_lag0
+  - ste_theta7_lag0
+  - ste_theta8_lag0
+  - ste_theta9_lag0
+  - ste_theta10_lag0
+  - ste_theta11_lag0
+  - ste_theta12_lag0
+  - ste_theta13_lag0
+  - ste_theta14_lag0
+  - ste_theta0_stock_lag0
+  - ste_theta1_stock_lag0
+  - ste_theta2_stock_lag0
+  - ste_theta3_stock_lag0
+  - ste_theta4_stock_lag0
+  - ste_theta5_stock_lag0
+  - ste_theta6_stock_lag0
+  - ste_theta7_stock_lag0
+  - ste_theta8_stock_lag0
+  - ste_theta9_stock_lag0
+  - ste_theta10_stock_lag0
+  - ste_theta11_stock_lag0
+  - ste_theta12_stock_lag0
+  - ste_theta13_stock_lag0
+  - ste_theta14_stock_lag0
+  - sentiment_stock_lag0
