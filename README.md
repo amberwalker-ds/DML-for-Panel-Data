@@ -1,6 +1,6 @@
 # Estmating the Causal Effect of Peace Agreements on Violence: A Double Machine Learning Approach Adapted for Panel Data
 
-This project analyzes the causal effect of peace agreements on the intensity of violence, using **Double Machine Learning (DML)** to control for confounders and handle high-dimensional panel data. We use lagged data to capture delayed effects and fixed effects to control for individual differences between countries.
+This project looks to find the **true** causal effect of peace agreements on the intensity of violence, using **Double Machine Learning (DML)** to control for confounders and handle high-dimensional panel data. We use lagged data to capture delayed effects and fixed effects to control for individual differences between countries.
 
 ## 📈 Purpose & Features
 - **Assess Causal Impact**: Use DML to better isolate the true effect of peace agreements on violence reduction.
@@ -13,8 +13,8 @@ This project analyzes the causal effect of peace agreements on the intensity of 
 - **PanelSplit** for panel data cross-validation
 
 ## 🛠️ Challenges & Future Plans
-- **Challenge**: Managing high-dimensional, lagged data for accurate causal estimates.
-- **Future Plans**: Add interactive visualizations, explore alternative ML models for robustness, and optimize for faster processing.
+- **Challenge**: Managing high-dimensional, lagged data and adapting DML for observational panel data.
+- **Future Plans**: Further dive into building a phased treatment variable which combines multiple periods into one (since peace agreements take months to show up and are gradual).
 
 ## Project Structure
 ```
@@ -48,7 +48,7 @@ This project analyzes the causal effect of peace agreements on the intensity of 
    end_period, outcome_variable, num_lags, n_splits, test_size, and paths for data and results storage.
 
 
-## Results and Analysis
+## 🎯 Results and Analysis
 ### Key Results
 - Theta Estimates: The model estimates the treatment effects (theta) with confidence intervals, providing insights into the causal impact of the treatment.
 - Performance Metrics: Evaluates outcome models using metrics like Mean Squared Error (MSE) and Area Under the Curve (AUC)
