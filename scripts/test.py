@@ -1,7 +1,7 @@
 import pandas as pd
-from scripts.data_processing import *
-from scripts.utils import *
-from scripts.modeling import *
+from data_processing import *
+from utils import *
+from modeling import *
 
 #load config
 config = load_config("config.yaml")
