@@ -6,16 +6,6 @@ from scripts.modeling import *
 #load config
 config = load_config("config.yaml")
 
-# #access config values
-# lag_type = config['lag_type']
-# base_covariates = config['base_covariates']
-# path_out = config['path_out']
-# end_period = config['end_period']
-# outcome_variable = config['outcome_variable']
-# num_lags = config['num_lags']
-# n_splits = config['n_splits']
-# test_size = config['test_size']
-
 #load and build a small test set with fake treatment data
 def load_and_prepare_test_data():
 
