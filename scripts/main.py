@@ -33,14 +33,14 @@ clean_df = impute_missing_data(df)
 df_with_features = feature_engineering(clean_df, 2)
 df_with_ohe, ohe_list = build_one_hot_dummies(df_with_features)
 
-# Create models from config
+#create models from config
 model_y = create_model(config['model_y'])
 model_t = create_model(config['model_t'])
 
-# Create X_list based on base_covariates
+#create X_list based on base_covariates
 X_list = [f'{cov}_lag0' for cov in base_covariates]
 
-# Run the prepare_and_run function
+#run the prepare_and_run function
 X_lagged, T, Y = prepare_and_run(
     df=df_with_ohe,
     end_period=end_period,
