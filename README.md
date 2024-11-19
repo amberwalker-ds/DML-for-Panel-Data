@@ -31,7 +31,9 @@ This project looks to find the **true** causal effect of peace agreements on the
     ├── config.yaml                       # Configuration file with project settings and paths
     ├── README.md                         # Project documentation
     ├── dml_modeling_eda_walkthrough.ipynb # Notebook to show thought process and logic when tackling the project
-    └── requirements.txt                  # Required packages for the project
+    ├── requirements.txt                  # Required packages for the project
+    └── LICENSE                           # License for the project
+
 ```
 
 
